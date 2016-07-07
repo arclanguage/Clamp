@@ -48,7 +48,7 @@ install SBCL and the Quicklisp package manager on Linux:
 (These instructions were tested on Ubuntu 14.04 with sbcl 1.1.14.)
 
 Now add the Clamp git repository to ~/quicklisp/local-projects. Then you can
-start up clamp in two ways:
+start up clamp in three ways:
 
   a) Run the 'clamp' script in the repo:
 
@@ -65,6 +65,13 @@ start up clamp in two ways:
     * (ql:quickload :clamp)
     * (in-package :clamp)
     * (use-syntax :clamp)
+
+  c) To run Clamp with Emacs, follow the instructions to install MELPA and
+  SLIME at https://www.common-lisp.net/project/slime/doc/html/Installation.html,
+  and then add these lines in your .emacs:
+
+    (setq inferior-lisp-program (concat (getenv "HOME") "/quicklisp/local-projects/Clamp/clamp"))
+    (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 
 Either way, you should now be ready to go:
 
