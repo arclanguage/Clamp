@@ -73,10 +73,20 @@ start up clamp in three ways:
     (setq inferior-lisp-program (concat (getenv "HOME") "/quicklisp/local-projects/Clamp/clamp"))
     (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 
+  Now start slime by typing:
+
+    M-x slime RET
+
 Either way, you should now be ready to go:
 
   * (map [+ _ 1] '(1 2 3))  ; example showing off Arc-specific syntax
   (2 3 4)
+
+If you use Emacs with option c) above, you can also send arbitrary code to the
+slime buffer for evaluation by positioning the cursor after it and pressing
+these keys:
+
+  C-c C-e
 
 Finally, to run Clamp's unit tests:
 
