@@ -1,7 +1,7 @@
-Clamp
+Clamp: Common Lisp with Arc Macros and Procedures
+https://github.com/arclanguage/Clamp
+by Michael Malis (https://github.com/malisper/Clamp)
 ====
-
-Common Lisp with Arc Macros and Procedures
 
 Arc is an amazing programming language because of its brevity and
 succinctness, but at the same time, it lacks some of the most basic
